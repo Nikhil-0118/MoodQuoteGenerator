@@ -1,3 +1,4 @@
+
 # Mood Quote Generator
 
 A simple web application that displays motivational quotes based on the user's mood.
