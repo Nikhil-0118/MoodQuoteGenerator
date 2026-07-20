@@ -1,7 +1,14 @@
 
 # Mood Quote Generator
 
+## 🌐 Live Demo
+https://moodquotegenerator.onrender.com
+
 A simple web application that displays motivational quotes based on the user's mood.
+
+## 📷 Screenshot
+
+![Mood Quote Generator](screenshot.png)
 
 ## Problem Statement
 
