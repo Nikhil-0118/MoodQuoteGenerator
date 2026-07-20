@@ -1,40 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mood Quote Generator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
 
-    <h1>Mood Quote Generator 😊</h1>
+<div class="container">
 
-    <p>Enter your mood and get an inspiring quote!</p>
+    <div class="card">
 
-    <form method="POST">
+        <h1>😊 Mood Quote Generator</h1>
 
-        <input
-            type="text"
-            name="mood"
-            placeholder="Enter your mood"
-            required>
+        <p class="subtitle">
+            Tell me how you're feeling and let AI inspire you.
+        </p>
 
-        <button type="submit">
-            Generate Quote
-        </button>
+        <form method="POST" id="quoteForm">
 
-    </form>
+            <input
+                type="text"
+                name="mood"
+                placeholder="How are you feeling today?"
+                required>
 
-    {% if quote %}
+            <button id="generateBtn">
+                Generate Quote ✨
+            </button>
 
-        <hr>
+        </form>
 
-        <h2>Your Quote</h2>
+        <div id="loading" class="loading">
+            🤖 AI is thinking...
+        </div>
 
-        <p>{{ quote }}</p>
+        {% if quote %}
 
-    {% endif %}
+        <div class="quote-box">
+
+            <h3>Your Quote</h3>
+
+            <p>{{ quote }}</p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
-
 </html>
