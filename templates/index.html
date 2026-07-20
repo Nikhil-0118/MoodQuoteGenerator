@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mood Quote Generator</title>
+</head>
+
+<body>
+
+    <h1>Mood Quote Generator 😊</h1>
+
+    <p>Enter your mood and get an inspiring quote!</p>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="mood"
+            placeholder="Enter your mood"
+            required>
+
+        <button type="submit">
+            Generate Quote
+        </button>
+
+    </form>
+
+    {% if quote %}
+
+        <hr>
+
+        <h2>Your Quote</h2>
+
+        <p>{{ quote }}</p>
+
+    {% endif %}
+
+</body>
+
+</html>
