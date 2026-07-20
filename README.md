@@ -8,7 +8,7 @@ A simple web application that displays motivational quotes based on the user's m
 
 ## 📷 Screenshot
 
-![Mood Quote Generator](screenshot.png)
+![Mood Quote Generator](Screenshots.png)
 
 ## Problem Statement
 
